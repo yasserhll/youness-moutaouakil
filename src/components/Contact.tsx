@@ -51,14 +51,13 @@ const Contact = () => {
           </a>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-8 border-t border-primary-foreground/10">
-            <div className="flex items-center gap-3 text-primary-foreground/70">
+            <a 
+              href={`tel:${whatsappNumber}`}
+              className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold transition-colors"
+            >
               <Phone className="w-5 h-5 text-gold" />
               <span>{whatsappNumber}</span>
-            </div>
-            <div className="flex items-center gap-3 text-primary-foreground/70">
-              <Mail className="w-5 h-5 text-gold" />
-              <span>contact@younessmoutaouakil.art</span>
-            </div>
+            </a>
           </div>
 
           {/* Social Links */}
