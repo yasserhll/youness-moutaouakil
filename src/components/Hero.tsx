@@ -96,7 +96,7 @@ const Hero = () => {
           <button onClick={scrollToGallery} className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-500 bg-white text-black hover:bg-amber-400 hover:text-black border-2 border-white hover:border-amber-400">
             Découvrir mes œuvres
           </button>
-          <a href="https://wa.me/212762179663" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-500 bg-transparent text-white border-2 border-white/70 hover:border-amber-400 hover:text-amber-400">
+          <a href="https://wa.me/212606116335" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-500 bg-transparent text-white border-2 border-white/70 hover:border-amber-400 hover:text-amber-400">
             Commander une œuvre
           </a>
         </motion.div>

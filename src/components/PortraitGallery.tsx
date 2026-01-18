@@ -33,7 +33,7 @@ const portraits = [
   },
 ];
 
-const WHATSAPP_NUMBER = "+212762179663";
+const WHATSAPP_NUMBER = "+212606116335";
 
 const PortraitCompareCard = ({ 
   portrait, 
