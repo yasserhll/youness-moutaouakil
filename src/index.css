@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 30 10% 15%;
+
+    --card: 40 30% 96%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 40 33% 98%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 30 10% 12%;
+    --primary-foreground: 40 33% 98%;
+
+    --secondary: 35 25% 90%;
+    --secondary-foreground: 30 10% 15%;
+
+    --muted: 35 20% 92%;
+    --muted-foreground: 30 10% 40%;
+
+    --accent: 38 70% 50%;
+    --accent-foreground: 40 33% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 38 70% 50%;
+
+    --radius: 0.25rem;
+
+    /* Custom artistic tokens */
+    --gold: 38 70% 50%;
+    --gold-light: 40 60% 70%;
+    --cream: 40 33% 98%;
+    --charcoal: 30 10% 12%;
+    --warm-gray: 30 10% 40%;
+    --terracotta: 15 60% 50%;
+    
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(38, 70%, 50%), hsl(45, 80%, 60%));
+    --gradient-dark: linear-gradient(180deg, hsl(30, 10%, 12%), hsl(30, 15%, 8%));
+    --gradient-hero: linear-gradient(180deg, transparent 0%, hsl(40, 33%, 98%) 100%);
+  }
+
+  .dark {
+    --background: 30 15% 8%;
+    --foreground: 40 30% 95%;
+
+    --card: 30 12% 12%;
+    --card-foreground: 40 30% 95%;
+
+    --popover: 30 15% 8%;
+    --popover-foreground: 40 30% 95%;
+
+    --primary: 40 30% 95%;
+    --primary-foreground: 30 15% 8%;
+
+    --secondary: 30 10% 18%;
+    --secondary-foreground: 40 30% 95%;
+
+    --muted: 30 10% 20%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 38 70% 50%;
+    --accent-foreground: 30 15% 8%;
+
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 38 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+@layer components {
+  .text-display {
+    font-family: 'Cormorant Garamond', serif;
+    @apply font-light tracking-tight;
+  }
+  
+  .text-elegant {
+    font-family: 'Cormorant Garamond', serif;
+    @apply italic;
+  }
+  
+  .hero-title {
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-subtitle {
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .btn-artistic {
+    @apply inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-500;
+    @apply bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground;
+    @apply border border-primary hover:border-accent;
+  }
+  
+  .btn-outline-artistic {
+    @apply inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-500;
+    @apply bg-transparent text-foreground border border-foreground/30;
+    @apply hover:border-accent hover:text-accent;
+  }
+  
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-medium tracking-wide transition-all duration-300;
+    @apply bg-[hsl(142,70%,40%)] text-white rounded-full;
+    @apply hover:bg-[hsl(142,70%,35%)] hover:scale-105 hover:shadow-xl;
+  }
+  
+  .section-padding {
+    @apply py-24 md:py-32 lg:py-40 px-6 md:px-12 lg:px-20;
+  }
+  
+  .gallery-card {
+    @apply relative overflow-hidden cursor-pointer;
+  }
+  
+  .gallery-card-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent;
+    @apply opacity-0 group-hover:opacity-100 transition-opacity duration-500;
+  }
+  
+  .gold-underline {
+    @apply relative inline-block;
+  }
+  
+  .gold-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-[1px] bg-accent scale-x-0 origin-left transition-transform duration-500;
+  }
+  
+  .gold-underline:hover::after {
+    @apply scale-x-100;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .animate-slide-in {
+    animation: slideIn 0.6s ease-out forwards;
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
