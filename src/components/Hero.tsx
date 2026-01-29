@@ -80,7 +80,7 @@ const Hero = () => {
         duration: 1,
         delay: 0.6
       }} className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-12 hero-subtitle">
-          Créateur d'émotions sur toile, capturant l'essence de la lumière et des couleurs
+          Quand j’utilise une couleur, ce n’est pas seulement une couleur. C’est une émotion
         </motion.p>
 
         <motion.div initial={{

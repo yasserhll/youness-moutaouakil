@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="py-8 px-6 border-t border-border">
       <div className="max-w-7xl mx-auto flex flex-col gap-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© 2024 Youness Moutaouakil. Tous droits réservés.</p>
+          <p>© 2022 - 2026 Youness Moutaouakil. Tous droits réservés.</p>
           <p className="text-elegant">
             L'art est la lumière de l'âme
           </p>

@@ -7,7 +7,7 @@ const features = [
   {
     icon: Palette,
     title: "Style Unique",
-    description: "Une fusion harmonieuse entre tradition et modernité, inspirée par les paysages du Maroc et la lumière méditerranéenne.",
+    description: "Chaque œuvre reflète ma passion, capturant l’émotion, la couleur, le détail et l’âme de chaque sujet.",
   },
   {
     icon: Heart,
@@ -53,10 +53,8 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             />
             <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed text-left">
-              Youness Moutaouakil est un artiste peintre passionné, dont le travail célèbre 
-              la beauté de la nature, l'architecture traditionnelle et l'abstraction contemporaine. 
-              Ses toiles invitent le spectateur à un voyage visuel où les couleurs dansent 
-              et les émotions s'expriment librement.
+              Younes est un artiste passionné qui explore portraits, nature et monuments marocains, intégrant calligraphie arabe, animaux,
+               art abstrait et dessins inspirés de l’anime. Chaque œuvre reflète émotion, détail et une vision artistique authentique.
             </p>
           </div>
         </motion.div>

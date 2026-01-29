@@ -10,11 +10,11 @@ import painting6 from "@/assets/painting-6.jpg";
 
 const paintings = [
   { id: 1, title: "Coucher de Soleil Marocain", category: "Paysage", image: painting1 },
-  { id: 2, title: "Harmonie en Bleu", category: "Abstrait", image: painting2 },
-  { id: 3, title: "Nature Morte aux Fleurs", category: "Nature Morte", image: painting3 },
-  { id: 4, title: "Reflets Méditerranéens", category: "Marine", image: painting4 },
-  { id: 5, title: "Ruelle Ensoleillée", category: "Architecture", image: painting5 },
-  { id: 6, title: "Géométrie Dorée", category: "Abstrait", image: painting6 },
+  { id: 2, title: "L’âme de l’architecture marocaine", category: "Monument", image: painting2 },
+  { id: 3, title: "Art et émotion de la lettre", category: "Calligraphi arabe", image: painting3 },
+  { id: 4, title: "Plumes vivantes", category: "Animaux", image: painting4 },
+  { id: 5, title: "Harmonie en Blue", category: "Abstrait", image: painting5 },
+  { id: 6, title: "Luffy | Gear 5", category: "Anime", image: painting6 },
 ];
 
 const GalleryItem = ({ painting, index }: { painting: typeof paintings[0]; index: number }) => {

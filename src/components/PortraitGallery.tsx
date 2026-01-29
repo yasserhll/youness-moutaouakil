@@ -15,19 +15,19 @@ import logoRassam from "@/assets/logo-rassam.png";
 const portraits = [
   { 
     id: 1, 
-    title: "Portrait Jeune Femme", 
+    title: "Portrait Homme", 
     original: portraitOriginal1, 
     drawing: portraitDrawing1 
   },
   { 
     id: 2, 
-    title: "Portrait Homme Âgé", 
+    title: "Portrait Jeune Femme", 
     original: portraitOriginal2, 
     drawing: portraitDrawing2 
   },
   { 
     id: 3, 
-    title: "Portrait Enfant", 
+    title: "Portrait Jeune Homme", 
     original: portraitOriginal3, 
     drawing: portraitDrawing3 
   },

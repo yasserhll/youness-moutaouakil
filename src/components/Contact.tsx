@@ -29,7 +29,7 @@ const Contact = () => {
             <span className="block text-elegant text-gold">Chef-d'œuvre</span>
           </h2>
           <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mb-12">
-            Vous souhaitez acquérir une œuvre ou commander une création personnalisée ? 
+            Vous souhaitez acquérir une œuvre ou commander une création personnalisée? 
             N'hésitez pas à me contacter via WhatsApp pour discuter de votre projet.
           </p>
         </motion.div>
